@@ -1,0 +1,54 @@
+body
+{
+	
+	background-color:#FFC0C7;
+
+}
+#para1
+{
+	margin:20px;
+	color:blue;
+	background-color:white;
+	font-family:Brush Script MT;
+	font-size:20px;
+}
+#para2
+{
+	padding:20px;
+	color:red;
+	background-color:white;
+	font-family:Brush Script MT;
+	font-size:20px;
+}
+h1
+{
+	
+	color:#ff5722;
+	text-align:center;
+	
+	
+}
+nav{
+ background-color:green;
+	list-style:none;
+	display:flex; 
+}
+nav li:hover{
+	background-color:black;
+	
+	
+}
+nav li
+{
+	 padding:15px 10px; 
+	
+}
+nav a:hover
+{
+	color:green;
+	
+}
+a{
+	color:white;
+	text-decoration: none;
+}
