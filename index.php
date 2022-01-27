@@ -38,7 +38,6 @@
     <img src="Bakery.jpg" alt="Bakery" width="500px" height="300px">
 
 
-<a href="#">About Us</a>
     <address>
         First Street,</br>
         Chennai.
