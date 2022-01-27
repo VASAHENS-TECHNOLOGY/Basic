@@ -5,12 +5,19 @@ include("config.php");
 
 $id = $_POST['id'];
 
-$name=$_POST['name'];
+$name=$_POST['username'];
 $phone=$_POST['phone'];
 $email=$_POST['email'];
 $age=$_POST['age'];
 $gender=$_POST['gender'];
-$habit=$_POST['habit'];
+
+for($i=0;$i < count($_POST['habit']);$i++)
+{
+    
+$habit .= $_POST['habit'][$i];
+
+}
+
 $password=$_POST['password'];
 
 // update user data

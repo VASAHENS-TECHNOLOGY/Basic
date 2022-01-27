@@ -55,8 +55,8 @@ while($user_data = mysqli_fetch_array($result))
 
 <input type="radio" name="gender" value="Others">Others  <br><br>
 <label>Habits</label>
-<input type="checkbox" name="habit[]" value="Read_Book">Read Book 
-<input type="checkbox" name="habit[]" value="Play_Cricket">Play Cricket
+<input type="checkbox" name="habit[]" value="Read_Book ">Read Book 
+<input type="checkbox" name="habit[]" value="Play_Cricket ">Play Cricket
 <input type="checkbox" name="habit[]" value="Drawing">Drawing <br><br>
 <label>Password</label>
 <input type="password"  name="password" value="<?php echo $password; ?>" required> <br><br>

@@ -14,7 +14,7 @@ $habits='';
 for($i=0;$i < count($_POST['habit']);$i++)
 {
     
-$habit .= $_POST['habit'][$i]."";
+$habit .= $_POST['habit'][$i];
 
 }
 
