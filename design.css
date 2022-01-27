@@ -35,8 +35,6 @@ nav{
 }
 nav li:hover{
 	background-color:black;
-	
-	
 }
 nav li
 {
@@ -55,3 +53,6 @@ a{
 td a{
 	color:firebrick;
 }
+.center {
+	margin: 0 auto;
+  }

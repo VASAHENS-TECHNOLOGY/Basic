@@ -8,6 +8,13 @@ $id = $_GET['id'];
 // Delete user row from table based on given id
 $result = mysqli_query($conn, "DELETE FROM register WHERE id=$id");
 
-// After delete redirect to View, so that latest user list will be displayed.
-header("Location:view.php");
+// Redirect to viewpage to display updated user in list
+if ($result>0)
+{
+echo "<script>alert('Deleted User Details Successfully...');window.location='view.php';</script>";
+}
+else
+{
+echo "<script>alert('Something Went Wrong...');window.location='view.php';</script>";
+}
 ?>

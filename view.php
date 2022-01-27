@@ -21,7 +21,7 @@ $result = mysqli_query($conn, "SELECT * FROM register ORDER BY id DESC");
     include "pagelink.php";
     ?>
     <h1>View User Details</h1>
-    <table border="1">
+    <table border="1" class="center">
 
     <tr>
         <th>Name</th> <th>Email</th> <th>Phone</th><th>Age</th><th>Gender</th><th>Habbit</th> <th>Action</th>
