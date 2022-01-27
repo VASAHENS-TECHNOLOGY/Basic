@@ -9,12 +9,9 @@
 </head>
 
 <body>
-    <nav>
-        <li><a href="index.php">HOME</a></li>
-        <li><a href="contact.php">CONTACT US</a></li>
-        <li><a href="register.php">Register</a></li>
-        <li><a href="login.php">Login</a></li>
-    </nav>
+    <?php 
+    include "pagelink.php";
+    ?>
     <h1>ABC Bakery </h1>
     <p id="para1">ABC Bakery World is an online store that delivers cakes and flowers in 63 locations in Chennai.
         We make best quality cakes and deliver it on time.

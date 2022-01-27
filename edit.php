@@ -34,6 +34,9 @@ while($user_data = mysqli_fetch_array($result))
     <title>ABC Bakery | Update Profile</title>
 </head>
 <body>
+<?php 
+    include "pagelink.php";
+    ?>
     <h1>Update Profile</h1>
     <form action="update.php" method="POST">
         <br><br>

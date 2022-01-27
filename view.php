@@ -17,6 +17,9 @@ $result = mysqli_query($conn, "SELECT * FROM register ORDER BY id DESC");
     <title>ABC Bakery | View User Details</title>
 </head>
 <body>
+<?php 
+    include "pagelink.php";
+    ?>
     <h1>View User Details</h1>
     <table border="1">
 

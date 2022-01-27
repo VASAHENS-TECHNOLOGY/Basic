@@ -10,6 +10,9 @@
     <title>ABC Bakery | Register</title>
 </head>
 <body>
+<?php 
+    include "pagelink.php";
+    ?>
     <h1>Register Form</h1>
     <form action="dashboard.php" method="POST">
         <br><br>
@@ -38,5 +41,6 @@
 <input type="submit" value="Register"> 
 </fieldset>
     </form>
+    
 </body>
 </html>
