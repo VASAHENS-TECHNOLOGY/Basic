@@ -10,16 +10,15 @@ include("config.php");
 $id = $_GET['id'];
 
 // Fetech user data based on id
-$result = mysqli_query($mysqli, "SELECT * FROM register WHERE id=$id");
+$result = mysqli_query($conn, "SELECT * FROM register WHERE id=$id");
 
 while($user_data = mysqli_fetch_array($result))
 {
+    $id = $user_data['id'];
 	$name = $user_data['name'];
 	$email = $user_data['email'];
 	$age = $user_data['age'];
-	$gender = $user_data['gender'];
 	$phone = $user_data['phone'];
-	//$mobile = $user_data['phone'];
 	$password = $user_data['password'];
 }
 ?>
@@ -32,7 +31,7 @@ while($user_data = mysqli_fetch_array($result))
     
 <link rel="stylesheet" href="design.css">
 
-    <title>ABC Bakery | Register</title>
+    <title>ABC Bakery | Update Profile</title>
 </head>
 <body>
     <h1>Update Profile</h1>
@@ -40,6 +39,8 @@ while($user_data = mysqli_fetch_array($result))
         <br><br>
      <fieldset>
          <legend>Personal Details</legend>
+         <label>User ID</label>
+<input type="text" name="id" value="<?php echo $id; ?>" readonly> <br><br>
 <label>Name</label>
 <input type="text" name="username" value="<?php echo $name; ?>" required> <br><br>
 <label>Email</label>
