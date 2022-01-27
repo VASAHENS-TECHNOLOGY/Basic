@@ -1,3 +1,28 @@
+<?php
+
+// include database connection file
+include("config.php");
+
+
+
+// Display selected user data based on id
+// Getting id from url
+$id = $_GET['id'];
+
+// Fetech user data based on id
+$result = mysqli_query($mysqli, "SELECT * FROM register WHERE id=$id");
+
+while($user_data = mysqli_fetch_array($result))
+{
+	$name = $user_data['name'];
+	$email = $user_data['email'];
+	$age = $user_data['age'];
+	$gender = $user_data['gender'];
+	$phone = $user_data['phone'];
+	//$mobile = $user_data['phone'];
+	$password = $user_data['password'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +41,13 @@
      <fieldset>
          <legend>Personal Details</legend>
 <label>Name</label>
-<input type="text" name="username" required> <br><br>
+<input type="text" name="username" value="<?php echo $name; ?>" required> <br><br>
 <label>Email</label>
-<input type="email" name="email"  required> <br><br>
+<input type="email" name="email" value="<?php echo $email; ?>"  required> <br><br>
 <label>Phone no</label>
-<input type="text" name="phone" required > <br><br>
+<input type="text" name="phone" value="<?php echo $phone; ?>" required > <br><br>
 <label>Age</label>
-<input type="number" name="age" required > <br><br>
+<input type="number" name="age" value="<?php echo $age; ?>" required > <br><br>
 <label>Gender</label><br><br>
 <input type="radio" name="gender" value="Male">Male
 <input type="radio" name="gender" value="Female">Female
@@ -33,7 +58,7 @@
 <input type="checkbox" name="habit[]" value="Play_Cricket">Play Cricket
 <input type="checkbox" name="habit[]" value="Drawing">Drawing <br><br>
 <label>Password</label>
-<input type="password"  name="password" required> <br><br>
+<input type="password"  name="password" value="<?php echo $password; ?>" required> <br><br>
 
 <input type="submit" value="Update"> 
 </fieldset>
